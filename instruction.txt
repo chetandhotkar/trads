@@ -32,8 +32,9 @@ just run following cmd
 1) npm install :- this will unpack package.json
 you will find the node(node_modules)
 
-2) node index.php 
+2) node index.js 
 
+3) http://localhost:8085/ 
 
 Database :- 
 MongoDB by mongodb 
