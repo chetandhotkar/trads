@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <title>CeX WeBuy</title>
+    
+    <!-- Font -->
+    <link rel="stylesheet" type="text/css" href="fonts/gotham/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="fonts/rupee/stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/pace-theme-flash.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/jquery.scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/select2.min.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="stylesheet/pages.css">
+
+  <script type="text/javascript" src="js/lib/jquery-1.11.1.min.js"></script>  
+  <script type="text/javascript" src="js/lib/moment-with-locales.js"></script>
+  <script type="text/javascript" src="js/lib/bootstrap-datetimepicker.js"></script>  
+  <script type="text/javascript" src="js/lib/underscore.js"></script>
+  <script type="text/javascript" src="js/lib/pace.min.js"></script>
+  <script type="text/javascript" src="js/lib/modernizr.custom.js"></script>
+  <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/lib/classie.js"></script>
+  <script type="text/javascript" src="js/lib/select2.full.min.js"></script>
+  <script type="text/javascript" src="js/lib/jquery.scrollbar.min.js"></script>
+  <script type="text/javascript" src="js/custom/pages.js"></script>
+  <script type="text/javascript" src="js/custom/config.js"></script>
+
+  <script type="text/javascript" src="js/custom/leftmenu.js"></script>  
+
+
+
+</head>
+<body class="fixed-header horizontal-menu dashboard">
+  <nav class="page-sidebar" data-pages="sidebar">
+    <div class="sidebar-header">
+      <img src="img/logo_white.png" alt="logo" class="brand" width="115" height="">
+      <div class="sidebar-header-controls">
+        <button type="button" class="btn btn-link visible-lg-inline" data-toggle-pin="sidebar"><i class="ti-control-record fs-12"></i>
+        </button>
+      </div>
+    </div>
+    <div class="sidebar-menu">
+      <ul class="menu-items clearfix">
+    
+        <!--<tr>        
+       <td align="center"><input type="text" id="user_mob_number" name="user_mob_number" value="5213231231"/></td>
+
+        <td><a id="" href="#" onclick="update_user_data(); return false;">Get Report </a></td>
+    </tr>-->
+        <li class="m-t-30">
+          <a href="#" onclick="show_dashboard(); return false;">Dashboard</a>
+          <span class="icon-thumbnail ti-home bg-success"></span>
+        </li>
+
+    
+      </ul>
+    </div>
+  </nav>
+  <div class="page-container"> 
+    <div class="header">    
+      <div class="container-fluid relative">    
+        <div class="pull-left full-height visible-sm visible-xs">    
+          <div class="header-inner">
+            <a href="#" class="btn-link toggle-sidebar visible-sm-inline-block visible-xs-inline-block padding-5" data-toggle="sidebar">
+              <span class="ti-menu"></span>
+            </a>
+          </div>    
+        </div>
+        <div class="pull-center hidden-md hidden-lg">
+          <div class="header-inner">
+            <div class="brand inline">
+              <img src="img/logo.png" alt="logo" data-src="img/logo.png" width="115" height="">
+            </div>
+          </div>
+        </div>
+        <div class="pull-right full-height visible-sm visible-xs"> 
+          <div class="header-inner">
+            <a href="#" class="btn-link visible-xs-inline-block visible-sm-inline-block m-r-10" data-pages="horizontal-menu-toggle">
+              <span class="ti-filter"></span>
+            </a>
+          </div>        
+        </div>
+      </div>
+      <div class=" pull-left sm-table hidden-xs hidden-sm">
+        <div class="header-inner">
+          <div class="brand inline">
+            <img src="img/logo.png" alt="logo" data-src="img/logo.png" width="115" height="">
+          </div>
+        </div>
+      </div>
+      <div class=" pull-right"> 
+        <div class="visible-lg visible-md m-t-10">
+          <div class="pull-left p-r-10 p-t-10 fs-16 font-heading">
+            <span class="semi-bold" id="display_name_res"></span>
+          </div>
+          <div class="pull-right">
+            <span class="thumbnail-wrapper d32 circular inline m-t-5">
+              <img src="img/CeX WeBuy-icon-72.png" alt="" data-src="img/CeX WeBuy-icon-72.png" width="32" height="32">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-content-wrapper ">
+      <div class="content">
+        <div class="bar">
+          <div class="pull-right">
+              <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
+                <i class="ti-close"></i>
+              </a>
+          </div>
+          <div class="bar-inner">
+<!--             <ul class="clearfix">
+              <li class="col-lg-2">
+                <div class="form-group no-margin">
+                  <select class="full-width" id="level_selected" onchange="select_level(this.value)" data-init-plugin="select2">                      
+                      <option value="0">All</option> 
+                      <option value="1">Partner</option>
+                      <option value="2">Distributor</option>
+                      <option value="3">Franchisee</option>
+                      <option value="4">Zone</option>
+                  </select>
+                </div>
+              </li>
+
+              <li class="col-lg-2">
+                <div class="form-group no-margin">
+                  <select class="full-width level_details" id="structure_id"  data-init-plugin="select2">
+
+                         </select>
+                </div>
+              </li>
+
+              <li class="col-lg-2">
+                <div class="form-group no-margin ">
+                  <select class="full-width select-hide-search" id="date_format_select" onchange="select_time_slot(this.value)" data-init-plugin="select2">
+                      <option value="0">Today</option> 
+                      <option value="1">This Month</option>
+                      <option value="2">This Year</option>
+                      <option value="3">Any Time</option>
+                  </select>
+                </div>
+              </li>
+
+              <li class="col-lg-2">
+                  <div id="datetimepicker_for_year"  class="clearfix" style="display:none">
+                    <i class="ti-angle-down pull-right padding-5"></i>
+                      <div class="no-overflow">
+                        <input type="text" name="txtdatetimepicker_for_year" id="txtdatetimepicker_for_year" class="form-control transparent no-border no-padding" placeholder="">
+                    </div>
+                  </div>
+                  <div id="datetimepicker_for_year_month"  class="clearfix"style="display:none">
+                    <i class="ti-angle-down pull-right padding-5"></i>
+                      <div class="no-overflow">
+                        <input type="text" name="txtdatetimepicker_for_year_month" id="txtdatetimepicker_for_year_month" class="form-control transparent no-border no-padding" placeholder="">
+                    </div>
+                  </div>
+                  <div id="datetimepicker_for_year_month_date"  class="clearfix">
+                    <i class="ti-angle-down pull-right padding-5"></i>
+                      <div class="no-overflow">
+                        <input type="text" name="txtdatetimepicker_for_year_month_date" id="txtdatetimepicker_for_year_month_date" class="form-control transparent no-border no-padding" placeholder="">
+                    </div>
+                  </div>                  
+
+              </li>
+
+              <li>
+                <div class="clearfix">
+                    <i class="ti-angle-right pull-right fs-10 padding-5 p-l-10 lh-14"></i>
+                    <div class="no-overflow">
+                        <input type="button" id="serachdata" value="Search" class="form-control transparent no-border no-padding">
+                    </div>
+                </div>
+              </li>
+
+
+            </ul> -->
+          </div>
+        </div>
+        <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
+
+          <div class="no-data-found" style="display:none"> NO DATA FOUND </div>
+          <div class="row div_for_count">
+
+<!--             <div class="col-md-3">
+              <div class="widget-8 panel no-border bg-primary no-margin widget-loader-bar">
+                <div class="container-xs-height full-height">
+                  <div class="row-xs-height">
+                    <div class="col-xs-height col-top">
+                      <div class="panel-heading top-left top-right">
+                        <div class="panel-title text-black hint-text">
+                          <span class="font-montserrat fs-11 all-caps">
+                          </span>
+                        </div>
+                        <div class="panel-controls">
+                          <ul>
+                            <li>
+                              <a data-toggle="refresh" class="portlet-refresh text-white" href="#"><i class="ti-control-record"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <ul class="div_count_of_call">
+
+                    
+                  </ul>
+                  
+                  <div class="row-xs-height ">
+                    <div class="col-xs-height col-top relative">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="p-l-20">
+                            <h3 class="no-margin p-b-5 text-white">14000</h3>
+                            <p class="text-white hint-text m-t-5">
+                              Higher
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+
+
+          </div>DASHBOARD
+        </div>
+      </div>
+      <div class="container-fluid container-fixed-lg footer">
+        <div class="copyright sm-text-center">
+          <p class="small no-margin pull-left sm-pull-reset">
+            <span class="hint-text">Copyright &copy; 2017 </span>
+            <span class="font-montserrat">CeX WeBuy</span>.
+            <span class="hint-text">All rights reserved. </span>
+          </p>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

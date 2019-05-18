@@ -1,0 +1,156 @@
+<script id="categories_template" type="text/html">
+
+  <form id="frm" name="frm" class="bar">
+    <div class="pull-right">
+      <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
+      <i class="ti-close"></i>
+      </a>
+    </div>
+    <div class="bar-inner">
+    </div>
+  </form>
+  <div class="jumbotron" data-pages="parallax">
+    <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
+      <div class="inner">
+        <ul class="breadcrumb">
+          <li>
+            <a href="#">Home</a>
+          </li>
+        </ul>
+        <h3 class="page-title">Trads</h3>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid container-fixed-lg bg-white">
+    <div class="panel panel-transparent">
+      <div class="panel-heading">
+        <div class="panel-title">
+        </div>
+        <div class="pull-right">
+          <div class="col-xs-12">
+            <!--<input type="text" id="search-table" class="form-control pull-right" placeholder="Search">-->
+          </div>
+        </div>
+      </div>
+      <div class="panel-body">
+        <table id="example" class="ui celled table table-hover demo-table-search table-responsive-block">
+          <thead>
+            <tr>
+           
+
+
+
+
+              <th> user</th>   
+              <th> name</th>   
+              <th> type</th>   
+              <th> price</th>   
+            
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade slide-up disable-scroll " id="assign_window" tabindex="" role="dialog" aria-hidden="false">
+    <div class="modal-dialog">
+      <div class="modal-content-wrapper">
+        <div class="modal-content">
+          <div class="modal-header clearfix text-left">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            <i class="ti-close fs-14"></i>
+            </button>
+            <h5 class="p-b-10" id="role_event_header">Create Trads</h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="form-group fg-categories form-group-default" id="categories_div">
+                  <label>type</label>
+                  <select class="full-width select-hide-search" id="t_type" name="t_type" data-init-plugin="select2">                      
+                    <option value="Buy" selected>buy</option>
+                    <option value="Sell" selected>sell</option>
+                </select>
+                </div>
+              </div>
+
+          
+                <div class="col-md-6 col-sm-6">
+                  <div class="form-group fg-categories form-group-default" id="categories_div">
+                    <label>User ID</label>
+                    <input type="text" class="form-control" name="user_id" id="user_id">
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <div class="form-group fg-categories form-group-default" id="categories_div">
+                    <label>Name</label>
+                    <input type="text" class="form-control" name="tname" id="tname">
+                  </div>
+                </div>
+  
+            
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-group fg-categories form-group-default" id="categories_div">
+                      <label>shares</label>
+                      <input type="text" class="form-control" name="shares" id="shares">
+                    </div>
+                  </div>
+  
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-group fg-categories form-group-default" id="categories_div">
+                      <label>price</label>
+                      <input type="text" class="form-control" name="price" id="price">
+                    </div>
+                  </div>
+                </div>
+            
+
+          
+            <div class="text-right m-t-20">
+              <button type="button" id="submit_btn"  class="btn btn-primary m-r-10" >Submit</button>
+              <button type="button" id="cancel_btn" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade slide-up disable-scroll " id="edit_role_window" tabindex="" role="dialog" aria-hidden="false">
+    <div class="modal-dialog">
+      <div class="modal-content-wrapper">
+        <div class="modal-content">
+          <div class="modal-header clearfix text-left">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            <i class="ti-close fs-14"></i>
+            </button>
+            <h5 class="p-b-10" id="role_event_header_edit">Edit Categorie</h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="form-group fg-categories form-group-default" id="categories_div_edit">
+                  <label>Categorie Name</label>
+                  <input type="text" class="form-control" name="categories_name_edit" id="categories_name_edit">
+                </div>
+              </div>
+
+            </div>
+            <div class="text-right m-t-20">
+              <button type="button" id="confirm_assign_edit_role"  class="btn btn-primary m-r-10" >Submit</button>
+              <button type="button" id="confirm_cancel_edit_role" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/custom/categories.js"></script>  
+</script>

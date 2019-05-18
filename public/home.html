@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <title>Xebia</title>
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Font -->
+  <link rel="stylesheet" type="text/css" href="fonts/gotham/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="fonts/themify-icons/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="fonts/rupee/stylesheet.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="stylesheet/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet/pace-theme-flash.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet/jquery.scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet/bootstrap-datetimepicker.css"> 
+  <link rel="stylesheet" type="text/css" href="stylesheet/dataTables.bootstrap.min.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="stylesheet/dataTables.fixedColumns.min.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="stylesheet/datatables.responsive.css" media="screen"/>  
+  <link rel="stylesheet" type="text/css" href="stylesheet/buttons.dataTables.min.css" media="screen"/> 
+  <link rel="stylesheet" type="text/css" href="stylesheet/select.dataTables.min.css" media="screen"/> 
+  <link rel="stylesheet" type="text/css" href="stylesheet/select2.min.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="stylesheet/pages.css">
+
+  <!-- Javascript Libraries -->
+  <script type="text/javascript" src="js/lib/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
+  
+  <script type="text/javascript" src="js/lib/mustache.min.js"></script>
+  <script type="text/javascript" src="js/lib/moment-with-locales.js"></script>
+  <script type="text/javascript" src="js/lib/bootstrap-datetimepicker.js"></script>
+  <script type="text/javascript" src="js/lib/select2.full.min.js"></script>
+  <script type="text/javascript" src="js/lib/lodash.min.js"></script>
+  <script type="text/javascript" src="js/lib/jszip.min.js"></script> 
+  <script type="text/javascript" src="js/lib/pdfmake.min.js"></script>
+  <script type="text/javascript" src="js/lib/vfs_fonts.js"></script>   
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/alasql@0.4.2/dist/alasql.min.js"></script>   
+
+  <script type="text/javascript" src="js/lib/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="js/lib/jquery-datatable-bootstrap.js"></script>
+  <script type="text/javascript" src="js/lib/dataTables.tableTools.min.js"></script>
+  <script type="text/javascript" src="js/lib/dataTables.bootstrap.js"></script>
+  <script type="text/javascript" src="js/lib/datatables.responsive.js"></script>
+  <script type="text/javascript" src="js/lib/dataTables.buttons.min.js"></script>
+  
+  <script type="text/javascript" src="js/lib/underscore.js"></script>
+  <script type="text/javascript" src="js/lib/buttons.html5.min.js"></script>
+  <script type="text/javascript" src="js/lib/buttons.colVis.min.js"></script> 
+  <script type="text/javascript" src="js/lib/pace.min.js"></script>
+  <script type="text/javascript" src="js/lib/modernizr.custom.js"></script>
+  <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/lib/classie.js"></script>
+  <script type="text/javascript" src="js/lib/select2.full.min.js"></script>
+  <script type="text/javascript" src="js/lib/jquery.scrollbar.min.js"></script>
+  <script type="text/javascript" src="js/lib/dataTables.select.min.js"></script>
+  <script type="text/javascript" src="js/lib/socket.io.js"></script>
+</head>
+<body class="fixed-header horizontal-menu dashboard">
+  <nav class="page-sidebar" data-pages="sidebar">
+    <div class="sidebar-header">
+      <img src="img/unnamed.png" alt="logo" class="brand" width="115" height="50">
+      <div class="sidebar-header-controls">
+        <button type="button" class="btn btn-link visible-lg-inline" data-toggle-pin="sidebar"><i class="ti-control-record fs-12"></i>
+        </button>
+      </div>
+    </div>
+    <div class="sidebar-menu">
+      <ul class="menu-items clearfix " id="left_link_div">
+
+      
+        <li class="">
+            <a href="#" onclick="show_categories();" id="logout">Categories</a>
+            <a href="#" onclick="logout();" id="logout">Logout</a>
+          <span class="icon-thumbnail ti-power-off"></span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="page-container">
+    <div class="header">
+      <div class="container-fluid relative">
+        <div class="pull-left full-height visible-sm visible-xs">
+          <div class="header-inner">
+            <a href="#" class="btn-link toggle-sidebar visible-sm-inline-block visible-xs-inline-block padding-5" data-toggle="sidebar">
+            <span class="ti-menu"></span>
+            </a>
+          </div>
+        </div>
+        <div class="pull-center hidden-md hidden-lg">
+          <div class="header-inner">
+            <div class="brand inline">              
+            </div>
+          </div>
+        </div>
+        <div class="pull-right full-height visible-sm visible-xs">
+          <div class="header-inner">
+            <a href="#" class="btn-link visible-xs-inline-block visible-sm-inline-block m-r-10" data-pages="horizontal-menu-toggle">
+            <span class="ti-filter"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class=" pull-left sm-table hidden-xs hidden-sm">
+        <div class="header-inner">
+          <div class="brand inline">
+            <img src="img/unnamed.png" alt="logo" data-src="img/unnamed.png" width="115" height="50">
+          </div>
+        </div>
+      </div>
+      <div class=" pull-right">
+        <div class="visible-lg visible-md m-t-10">
+          <div class="pull-left p-r-10 p-t-10 fs-16 font-heading">
+            <span class="semi-bold" id="display_name_res"></span>
+          </div>
+          <div class="pull-right">
+            <span class="thumbnail-wrapper d32 circular inline m-t-5">
+            <img src="img/unnamed.png" alt=""  width="32" height="32">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-content-wrapper ">
+      <div class="content" id="main_content">
+        <!--######PAGE CONTENT GOES HERE-->
+      </div>
+      <div class="container-fluid container-fixed-lg footer">
+        <div class="copyright sm-text-center">
+          <p class="small no-margin pull-left sm-pull-reset">
+            <span class="hint-text">Copyright &copy; 2019 </span>
+            <span class="font-montserrat">Xebia</span>.
+            <span class="hint-text" >All rights reserved. </span>
+          </p>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Custom Javascript -->
+  <script type="text/javascript" src="js/custom/pages.js"></script>
+  <script type="text/javascript" src="js/custom/config.js"></script>
+  <script type="text/javascript" src="js/custom/leftmenu.js"></script>
+  <script type="text/javascript" src="js/custom/home.js"></script>
+  
+
+</body>
+</html>

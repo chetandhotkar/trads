@@ -1,0 +1,120 @@
+[ERROR] Error: 
+17/5/2019 3:33:55 pm  TypeError: categories.trades is not a function
+    at /var/www/html/projects/work/testing/lib/route.js:68:31
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/var/www/html/projects/work/testing/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:275:10)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/route.js:127:14)
+    at /var/www/html/projects/work/testing/lib/route.js:5:5
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/var/www/html/projects/work/testing/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:281:22
+    at param (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:354:14)
+    at param (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:410:3)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:317:13)
+    at /var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:317:13)
+    at /var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:335:12)
+[ERROR] Error: 
+17/5/2019 5:10:55 pm  TypeError: categories.erase is not a function
+    at /var/www/html/projects/work/testing/lib/route.js:72:31
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/var/www/html/projects/work/testing/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:275:10)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/route.js:127:14)
+    at /var/www/html/projects/work/testing/lib/route.js:5:5
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/var/www/html/projects/work/testing/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:281:22
+    at param (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:354:14)
+    at param (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:410:3)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:317:13)
+    at /var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:317:13)
+    at /var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:335:12)
+[ERROR] Error: 
+17/5/2019 7:01:03 pm  TypeError: Cannot read property '_id' of undefined
+    at /var/www/html/projects/work/testing/lib/categories.js:46:26
+    at Function._.each._.forEach (/var/www/html/projects/work/testing/node_modules/underscore/underscore.js:191:9)
+    at Object.erase (/var/www/html/projects/work/testing/lib/categories.js:45:5)
+    at /var/www/html/projects/work/testing/lib/route.js:73:31
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/var/www/html/projects/work/testing/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:275:10)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/route.js:127:14)
+    at /var/www/html/projects/work/testing/lib/route.js:5:5
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/var/www/html/projects/work/testing/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:281:22
+    at param (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:354:14)
+    at param (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:410:3)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:317:13)
+    at /var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:91:12)
+[ERROR] Error: 
+17/5/2019 7:11:59 pm  TypeError: Cannot read property '_id' of undefined
+    at /var/www/html/projects/work/testing/lib/categories.js:48:26
+    at Function._.each._.forEach (/var/www/html/projects/work/testing/node_modules/underscore/underscore.js:191:9)
+    at Object.erase (/var/www/html/projects/work/testing/lib/categories.js:45:4)
+    at /var/www/html/projects/work/testing/lib/route.js:73:31
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/var/www/html/projects/work/testing/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:275:10)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/route.js:127:14)
+    at /var/www/html/projects/work/testing/lib/route.js:5:5
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/var/www/html/projects/work/testing/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:281:22
+    at param (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:354:14)
+    at param (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:410:3)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:317:13)
+    at /var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/projects/work/testing/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle [as handle_request] (/var/www/html/projects/work/testing/node_modules/express/lib/router/layer.js:91:12)

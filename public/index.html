@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CeX WeBuy</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Font -->
+    <link rel="stylesheet" type="text/css" href="fonts/gotham/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="fonts/rupee/stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/pace-theme-flash.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/jquery.scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/pages.css">
+
+    <script type="text/javascript" src="js/lib/pace.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/lib/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/classie.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="js/custom/pages.js"></script>
+    <script type="text/javascript" src="js/custom/config.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+  console.log('Jekin Test 203')  ;
+  $('.loing_loader').addClass('dnone');
+  var base_url = api_url+"api/v1/auth";
+  $('#login').click(function() {
+
+      $('.password-txt-div').removeClass('has-error');
+      $('.password-txt-div').removeClass('has-error');
+
+//       window.location = "dashboard?k=2&c=2";  
+    if($('#username').val() == '' ){      
+       $('.user-name-txt-div').addClass('has-error');
+      return false;
+    }else if( $('#password').val() == ''){
+        $('.password-txt-div').addClass('has-error');
+    }else{
+      $('.password-txt-div').removeClass('has-error');
+      $('.password-txt-div').removeClass('has-error');
+      $('.loing_loader').removeClass('dnone');
+        setTimeout(function(){ 
+         
+        login();   
+         }, 300);
+       
+    
+    }
+
+
+  });
+});
+
+  var login = function()
+  {
+
+  
+    var params = {};
+    var signin_username = $.trim($('#username').val());
+    var signin_password = $.trim($('#password').val());
+    params.username = signin_username;
+    params.password = signin_password;
+    
+    //console.log(params);
+    $.ajax({
+         url : "api/login",
+         type : 'POST',
+         dataType : 'json',
+         async: false,
+         data: params,
+         success: function(response)
+         {
+           console.log(response, "  response");         
+
+           if(response.result == 'success'){
+            $('.loing_loader').addClass('dnone');
+            window.location = "/dashboard";
+           }else{
+              $('#loginvalidationdiv').html(response.message);
+              $('.password-txt-div').addClass('has-error');  
+              $('.user-name-txt-div').addClass('has-error');
+              $('.loing_loader').addClass('dnone');
+           }
+          
+         }
+    });
+
+
+  };
+
+
+    function handle(e){
+ if(e.keyCode == 13){
+
+      $('.password-txt-div').removeClass('has-error');
+      $('.password-txt-div').removeClass('has-error');
+
+//       window.location = "dashboard?k=2&c=2";  
+    if($('#username').val() == '' ){      
+       $('.user-name-txt-div').addClass('has-error');
+      return false;
+    }else if( $('#password').val() == ''){
+        $('.password-txt-div').addClass('has-error');
+    }else{
+      $('.password-txt-div').removeClass('has-error');
+      $('.password-txt-div').removeClass('has-error');
+      $('.loing_loader').removeClass('dnone');
+        setTimeout(function(){ 
+         
+        login();   
+         }, 300);
+       
+    
+    }
+       
+    }
+    }
+
+
+</script>
+
+</head>
+<body class="windows">
+    <div class="lock-container full-height">
+        <div class="container-sm-height full-height sm-p-t-50">
+            <div class="row row-sm-height">
+                <div class="col-xs-12 col-sm-height col-middle">
+                    <div class="row clearfix">
+                        <div class="col-sm-6 col-xs-12 clearfix m-b-25 sm-m-b-0">
+                            <div class="float-left hidden-xs">
+                                <div class="thumbnail-wrapper circular d48 m-r-10 ">
+                                    <img width="43" height="43" alt="" src="img/CeX_Logo_Rich_black_CMYK-01.webp">
+                                </div>
+                            </div>
+                            <div class="no-overflow">
+                                <h5 class="logged hint-text no-margin">
+                                Welcome
+                                </h5>
+                                <h2 class="name no-margin">Sign into CeX WeBuy</h2>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <form id="form-lock" id="frm" name="frm">
+                                <div class="text-danger m-b-20" id="loginvalidationdiv"></div>
+                                <div class="form-group-attached">
+                                    <div id="user_name_validation" class="form-group user-name-txt-div form-group-default sm-m-t-30">
+                                        <label>Username</label>
+                                        <div class="controls">
+                                            <input type="text" id="username" name="username" value="" autocomplete="off" tabindex="1" autocapitalize="none" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div  id="password_validation"class="form-group password-txt-div form-group-default">
+                                        <label>Password</label>
+                                        <div class="controls">
+                                            <input onkeypress="handle(event)"  type="password" id="password" name="password" value="" autocomplete="off" tabindex="2" autocapitalize="none" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <input type="button" id="login" class="btn btn-primary m-t-20 btn-cons pull-left" value="Login" />
+                                    <div class="loing_loader progress-circle-indeterminate m-t-20 m-l-10 pull-left"></div>
+                                </div>
+                            </form>                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="pull-bottom full-width">
+        <div class="lock-container m-b-10 clearfix">
+            <div class="col-xs-12 m-t-15">
+                <p class="hinted-text small text-center">
+                    Copyright &copy; 2018-2019 <span class="font-montserrat">CeX WeBuy</span>. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
