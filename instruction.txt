@@ -1,0 +1,44 @@
+
+
+GIT URL :- 
+
+https://github.com/chetandhotkar/trads.git
+
+
+
+-------------------------------------------------------
+
+API List :-
+
+Get list of trades
+http://localhost:8085/trades/trades 
+
+----------------------------------------
+Insert Data API
+http://localhost:8085/insert_trads?type=Sell&user=chetan&name=chetandhotkar&shares=10&price=130.42 
+----------------------------------------
+Get User Data API
+http://localhost:8085/trades/users?userid=chetan
+
+-------------------------------------------------------------
+Filter trades
+http://localhost:8085/filter_trades/?type=Sell&start=2019-5-17%2016:21:25&end=2019-5-18%2016:21:25
+
+
+
+Instration TO Install 
+Get the folder
+just run following cmd 
+1) npm install :- this will unpack package.json
+you will find the node(node_modules)
+
+2) node index.php 
+
+
+Database :- 
+MongoDB by mongodb 
+you did not need to add this this is online MongoDB
+
+
+
+
