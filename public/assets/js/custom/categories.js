@@ -93,10 +93,7 @@ $(document).ready(function() {
                 }
             },    
             
-            "createdRow": function( row, data, dataIndex ) {
-                //<div   >Get Details </div>
-                $(row).find('td:eq(2)').html('<button> Delete!</button>');
-            },  
+
             columns: [ 
               
               { data : "user" },
@@ -146,7 +143,7 @@ function delete_trads(selected_data){
   var data = {};
   data.selected_data =selected_data;
   $.ajax({
-    url: "/trads/erase",
+    url: "/trads/erase_selected",
     type: 'GET',
     dataType: 'json',
     async: false,

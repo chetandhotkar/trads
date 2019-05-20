@@ -1,6 +1,6 @@
 base_url = __dirname;
 BASEPATH = __dirname + '/';
-uploaded_excel_path = __dirname + '/uploaded_excel';
+
 tmp_folder = __dirname + '/tmp';
 log_folder = __dirname + '/log';
 LOG_ENABLE = true;
@@ -91,9 +91,6 @@ String.prototype.replaceBetween = function (start, end, what) {
 };
 
 
-if (!fs.existsSync(uploaded_excel_path)){
-    fs.mkdirSync(uploaded_excel_path);
-}
 
 console.error = function (msg) {
     try {
@@ -102,11 +99,53 @@ console.error = function (msg) {
         
     }
     LOGME.addLogFile('Error', msg, 'error');
-   message = "Error ON " + common_helper.getSystemIp()+"::[]==>"+msg;
-    message+="\n";    
-    common_helper.sendErrorEmail(msg);
+ 
+ 
+ 
     process.stderr.write(msg);
 };
 
+// MongoClient.connect(DB_CONFIG.MONGODB_URL, function(err, db) { 
+// db.collection(DB_CONFIG.COLLECTION_NAME).find({"Active" : "1" }).toArray(function(err, result) {	                                     
+//     if (err){
+//         console.log("err")
+//         var result_data = {};         
+//          result_data.result ="error";             
+//          result_data.HTTPresponse =400;   
+//          result_data.reportData = result;          
+//          console.log(result);
+     
+//     } else{       
 
+//         if(_.size(result) == 0){
+//           var result_data = {};     
+//           result_data.result ="sucess but with 0 data"; 
+//           result_data.HTTPresponse =200; 
+//           result_data.reportData = result;              
+//           console.log(result);
+//         }else{
+//           var result_data = {};     
+//           result_data.result ="sucess"; 
+//           result_data.HTTPresponse =200; 
+//           result_data.reportData = result;              
+//          console.log(result);
+//         }
+        
 
+//     } 
+//   }); 
+// })
+
+// MongoClient.connect(DB_CONFIG.MONGODB_URL, function(err, db){ 
+//  	//query store the search condition
+//      var query = {"_id" : {"$exists" : true, "$ne" : ""}};
+//      //data stores the updated value
+//      var data = { $set : {Active : "0" } }
+//      //CREATING A COLLECTION IN MONGODB USING NODE.JS
+//      db.collection(DB_CONFIG.COLLECTION_NAME).updateMany(query , data, (err , collection) => {
+//          if(err) throw err;
+//          //console.log(collection.result.nModified + " Record(s) updated successfully");	//It will console the number of rows updated
+//          console.log(collection.message.documents[0].nModified);
+   
+//      });
+//   }) 

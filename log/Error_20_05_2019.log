@@ -1,0 +1,10 @@
+[ERROR] Error: 
+20/5/2019 3:51:19 pm  (node:27210) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): MongoError: unknown top level operator: $set
+[ERROR] Error: 
+20/5/2019 3:51:58 pm  (node:27244) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): MongoError: unknown top level operator: $set
+[ERROR] Error: 
+20/5/2019 3:52:20 pm  (node:27272) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): MongoError: unknown top level operator: $set
+[ERROR] Error: 
+20/5/2019 3:59:36 pm  (node:27811) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): MongoError: document must be a valid JavaScript object
+[ERROR] Error: 
+20/5/2019 4:24:58 pm  (node:29475) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): MongoError: BSON field 'update.updates.u' is the wrong type 'array', expected type 'object'
