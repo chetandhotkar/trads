@@ -22,7 +22,7 @@
     "elasticsearch": "^13.0.1",
     "exceljs": "^0.4.12",
     "express": "^4.15.2",
-    "express-fileupload": "^0.2.0",
+    "express-fileupload": "^1.1.9",
     "express-fingerprint": "^1.1.1",
     "finalhandler": "^1.1.1",
     "forever": "^0.15.3",
