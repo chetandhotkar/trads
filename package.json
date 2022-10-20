@@ -34,7 +34,7 @@
     "logplease": "^1.2.13",
     "method-override": "^2.3.9",
     "moment": "^2.18.1",
-    "mongoose": "^4.10.4",
+    "mongoose": "^4.13.21",
     "monk": "^6.0.0",
     "mustache": "^2.3.0",
     "mysql": "^2.13.0",
