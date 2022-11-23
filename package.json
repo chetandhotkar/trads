@@ -49,7 +49,7 @@
     "sax": "^1.2.4",
     "serve-static": "^1.13.2",
     "slack-node": "^0.1.8",
-    "socket.io": "^2.0.3",
+    "socket.io": "^2.5.0",
     "strip-bom": "^3.0.0",
     "sync-sql": "^1.0.2",
     "underscore": "^1.8.3",
